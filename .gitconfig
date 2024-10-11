@@ -194,3 +194,6 @@
 	
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+
+[includeIf "gitdir:~/code/falabella"]
+    path = ~/code/falabella/.gitconfig

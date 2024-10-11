@@ -164,3 +164,13 @@ alias gc="git clone"
 alias checkout="git checkout"
 alias checkoutb="git checkout -b"
 
+alias enable-git-editor="git config --global core.editor 'code --wait'"
+alias disable-git-editor="git config --global core.editor 'vim'"
+
+# PROJECTS
+## OBMX-NG-UI
+alias hide-bypass="git update-index --assume-unchanged libs/shared/data-access/src/lib/sandbox/flagr-sandbox.service.ts libs/shared/ng-ui/src/lib/component/input-webrtc-camera/input-webrtc-camera.component.ts libs/shared/data-access/src/lib/service/identity-verification/fingerprint-validation-app.service.ts"
+alias show-bypass="git update-index --no-assume-unchanged libs/shared/data-access/src/lib/sandbox/flagr-sandbox.service.ts libs/shared/ng-ui/src/lib/component/input-webrtc-camera/input-webrtc-camera.component.ts libs/shared/data-access/src/lib/service/identity-verification/fingerprint-validation-app.service.ts"
+alias ng-stubs="cd stubs && npm run start-stubs"
+alias branch-qa="npx nx run ng-branch-app:serve:qa -- --port 8080"
+alias branch-test="npx nx run ng-branch-app:serve:development -- --port 8080"
