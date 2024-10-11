@@ -99,6 +99,8 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
+	editor = code --wait
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -127,7 +129,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	gpgsign = false
 
 [diff]
 
@@ -181,3 +183,14 @@
 [init]
 
 	defaultBranch = main
+
+[user]
+	name = Jorge Guzmán
+	email = jgu7man@gmail.com
+
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+	
+[credential "https://dev.azure.com"]
+	useHttpPath = true
