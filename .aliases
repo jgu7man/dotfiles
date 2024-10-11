@@ -146,3 +146,21 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Git
+alias gitlog="git log --oneline --decorate --all --graph"
+alias gitcan="git commit --amend --no-edit"
+alias gitup="git add . && git commit --amend --no-edit && git push --force"
+alias gitundo="git reset --hard HEAD~1"
+alias cherry="git cherry-pick"
+alias rebase="git rebase"
+alias rebasei="git rebase -i HEAD~"
+alias rebasec="git rebase --continue"
+alias cherryc="git cherry-pick --continue"
+alias cherrya="git cherry-pick --abort"
+alias rebasea="git rebase --abort"
+alias rebase="git rebase --continue"
+alias gc="git clone"
+alias checkout="git checkout"
+alias checkoutb="git checkout -b"
+
