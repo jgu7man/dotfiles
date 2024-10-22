@@ -1,8 +1,26 @@
 # Add `~/bin` to the `$PATH`
+
 export PATH="$HOME/bin:$PATH";
+# Set Node Version Manager (NVM) path
 export NVM_DIR="$HOME/.nvm"
 	[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 	[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+#### OBMX CONFIGURATION FOR APK BUILDING ####
+# Set Android SDK paths
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+# Set JAVA_HOME
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+# Set GRADLE_HOME
+export GRADLE_HOME="/opt/gradle/gradle-7.5.1"
+
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/build-tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+export PATH="$PATH:$GRADLE_HOME/bin"
+export PATH="$PATH:/usr/local/opt/docker"
+export PATH="$PATH:$HOME/.nvm/versions/node/v12.22.12/bin/cordova"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
